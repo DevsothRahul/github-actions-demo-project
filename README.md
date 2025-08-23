@@ -43,3 +43,21 @@ jobs:
     steps:
       - name: Run tests
         run: echo "Running tests..."
+
+---
+
+## 💡 Example: Multiple Steps in One Job
+
+```yaml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: ./mvnw clean install
+
+      - name: Test
+        run: ./mvnw test
