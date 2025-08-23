@@ -46,7 +46,7 @@ jobs:
 
 ---
 
-💡 Example: Multiple Steps in One Job
+💡 Example: Multiple Steps in One Job  
 
 jobs:
   build:
@@ -60,4 +60,3 @@ jobs:
 
       - name: Test
         run: ./mvnw test
-
