@@ -42,7 +42,7 @@ jobs:
     needs: build  # Waits for the 'build' job to finish
     steps:
       - name: Run tests
-        run: echo "Running tests..."
+        run: echo "Running tests..." ```
 
 ---
 
@@ -60,4 +60,4 @@ jobs:
         run: ./mvnw clean install
 
       - name: Test
-        run: ./mvnw test
+        run: ./mvnw test ```
