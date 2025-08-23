@@ -46,7 +46,7 @@ jobs:
 
 ---
 
-## 💡 Example: Multiple Steps in One Job
+**## 💡 Example: Multiple Steps in One Job**
 
 ```yaml
 jobs:
