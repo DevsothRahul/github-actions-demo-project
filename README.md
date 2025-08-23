@@ -61,16 +61,16 @@ How Workflows Differ (by use case)
 1. Simple Hello World Workflow
 	For learning and basic automation:
 	
-name: Hello World
-
-on: [push]
-
-jobs:
-  say-hello:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Say hello
-        run: echo "Hello, GitHub Actions!"
+	name: Hello World
+	
+	on: [push]
+	
+	jobs:
+	  say-hello:
+	    runs-on: ubuntu-latest
+	    steps:
+	      - name: Say hello
+	        run: echo "Hello, GitHub Actions!"
 
 
   	
