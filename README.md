@@ -46,9 +46,8 @@ jobs:
 
 ---
 
-**## 💡 Example: Multiple Steps in One Job**
+💡 Example: Multiple Steps in One Job
 
-```yaml
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -60,4 +59,5 @@ jobs:
         run: ./mvnw clean install
 
       - name: Test
-        run: ./mvnw test 
+        run: ./mvnw test
+
