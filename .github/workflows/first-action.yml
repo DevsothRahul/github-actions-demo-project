@@ -22,3 +22,11 @@ jobs:
           run: |
               cd springboot-project
               mvn clean install
+  Docker-Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Docker Setup Docker
+        uses: docker/setup-docker-action@v4.3.0
+        with:
+          context: ./springboot-project
+          file: ./springboot-project/Dockerfile
