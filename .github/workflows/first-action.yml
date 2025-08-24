@@ -11,3 +11,14 @@ jobs:
         
         - name: Say Hello
           run: echo "Hello, GitHub Actions!"
+
+        - name: Setup Java JDK
+          uses: actions/setup-java@v5.0.0
+          with:
+            java-version: '17'
+            distribution: 'temurin'
+            cache: 'maven'
+        - name: Build with Maven
+          run:
+              cd springboot-project
+              mvn clean install
