@@ -19,6 +19,6 @@ jobs:
             distribution: 'temurin'
             cache: 'maven'
         - name: Build with Maven
-          run:
+          run: |
               cd springboot-project
               mvn clean install
